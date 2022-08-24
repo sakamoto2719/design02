@@ -1,0 +1,49 @@
+/* fv */
+
+.fv {
+    background: url(../product-1/img/fv-sp.png) center center / cover;
+}
+
+@media screen and (min-width: 1025px) {
+    .fv {
+        background: url(../product-1/img/fv-pc.png) center center / cover;
+    }
+    
+}    
+
+
+/* product-list */
+
+.product-box .outer .inner {
+    padding: 2.3rem 0 8rem;
+}
+
+.product-box .text-box {
+    margin-bottom: 3.5rem;
+}
+
+.product-box .more {
+    background-color: #000;
+}
+
+.product-box .outer .inner:last-of-type {
+    padding-bottom: 10rem;
+}
+
+@media screen and (min-width: 1025px) {
+    .product-box {
+        margin-bottom: 6.5rem;
+    }
+
+    .product-box:last-of-type {
+        margin-bottom: 16rem;
+    }
+
+    .product-box .outer .inner {
+        padding: 0;
+    }
+
+    .product-box .outer .inner:last-of-type {
+        padding-bottom: 0;
+    }
+}

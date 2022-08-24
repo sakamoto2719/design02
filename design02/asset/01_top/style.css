@@ -1,0 +1,556 @@
+body {
+    padding-top: 0;
+}
+
+
+@media screen and (min-width: 1025px) {
+
+    body {
+        padding-top: 0;
+    }
+}
+
+/* fv */
+
+.fv {
+    height: 38rem;
+    background: url(../01_top/img/FV.png) center center / cover;
+}
+
+@media screen and (min-width: 1025px) {
+    .fv {
+        height: 71rem;
+    }
+    
+}    
+
+/* news */
+.news {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background: rgba(236, 236, 236, 1);
+}
+
+.news h2 {
+    margin-bottom: 2.3rem;
+}
+
+.news ul {
+    text-align: left;
+}
+
+.news li {
+    margin-bottom: 0;
+    
+}
+
+.news li p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: block;
+    line-height: 23px;
+    letter-spacing: normal;
+
+}
+
+.news li p:first-of-type {
+    margin-bottom: 0.35rem;
+}
+
+.news li p:last-of-type {
+    padding-bottom: 1rem;
+    margin-bottom: 0.7rem;
+    border-bottom: solid 1px #000;
+}
+
+.news li:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.allow {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.button-inner {
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: solid 0.5px #000;
+    margin-right: 0.5rem;
+    letter-spacing: 0.35rem;
+}
+
+.allow img {
+    width: 1.6rem;
+}
+
+@media screen and (min-width: 1025px) {
+    .news {
+        background-color: #fff;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .news .inner {
+        width: 70%;
+        max-width: 85rem;
+        background-color: #ECECEC;
+        padding: 2.5rem 1.6rem 1.3rem 4.5rem;
+
+    }
+
+    .news h2 {
+        margin-right: 8rem;
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    .news h2::after {
+        content: "";
+        width: 1px;
+        height: 10rem;
+        background-color: #5DD6B1;
+        position: absolute;
+        right: -4rem;
+        top: -1.5rem;
+    }
+    
+    .news .inner .box {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .news li:last-of-type{
+        margin-bottom: 0;
+        
+    }
+
+    .news li p {
+        display: inline-block;
+    }
+
+    .news li p:first-of-type {
+        margin-right: 3rem;
+    }
+
+    .news li p:last-of-type {
+        border-bottom: none;
+    }
+
+    .allow {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+    }
+    
+    .button-inner {
+        font-size: 1.3rem;
+        font-weight: 700;
+        border-bottom: solid 0.5px #000;
+        margin-right: 0.5rem;
+        letter-spacing: 0.35rem;
+    }
+    
+    .allow img {
+        width: 1.6rem;
+    }
+    
+} 
+
+/* concept */
+.concept {
+    padding-top: 8rem;
+    
+}
+
+.concept .bg {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background:linear-gradient(-90deg,#E8FAF5 78%,#fff 22%);
+}
+
+.concept h2 {
+    margin-bottom: 2rem;
+}
+
+.concept .text-box {
+    margin-bottom: 3.3rem;
+}
+
+.concept .more {
+    margin-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 1025px) {
+    .concept {
+        padding-top: 0;
+    }
+
+    .concept .bg {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background:linear-gradient(-90deg,#E8FAF5 60%,#fff 40%);
+    }
+
+    .concept .outer {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .concept .text-box {
+        padding-left: 5.5rem;
+        margin-bottom: 3.3rem;
+    }
+    
+    .concept .more {
+        margin-bottom: 3.5rem;
+    }
+
+
+}    
+
+/* product */
+.product {
+    padding-top: 7rem;
+}
+
+.product h2 {
+    margin-bottom: 2.8rem;
+}
+
+.product ul {
+    margin-bottom: 2.5rem;
+}
+
+.product-box .outer .inner {
+    padding: 3.4rem 0 4rem;
+}
+
+.product .content-title {
+    color: #fff;
+}
+
+.product .content-title::after {
+    background-color: #fff;
+}
+
+.product .text-box {
+    margin-bottom: 3.3rem;
+    color: #fff;
+}
+
+.product li:first-of-type {
+    background-color: #5DD6B1;
+}
+
+.product .white-more:first-of-type {
+    color: #5DD6B1;
+}
+
+.product li:nth-of-type(2) {
+    background-color: #5DC0D6;
+}
+
+.product li:nth-of-type(2) .white-more {
+    color: #5DC0D6;
+}
+
+.product li:last-of-type {
+    background-color: #B0E3D7;
+}
+
+.product li:last-of-type .white-more {
+    color: #B0E3D7;
+}
+
+.product .allow {
+    margin-right: 0;
+    margin-bottom: 7.8rem;
+}
+
+.product .allow img {
+    width: 2.2rem;
+}
+
+.product .button-inner {
+    font-size: 1.6rem;
+    margin-right: 1.3rem;
+}
+
+@media screen and (min-width: 1025px) {
+    .product {
+        margin-bottom: 10rem;
+    }
+
+    .product .product-box {
+        align-items: start;
+        
+    }
+
+    .product ul {
+        margin-bottom: 4rem;
+    }
+
+
+    .product li .outer .inner {
+        padding-bottom: 0;
+    }
+
+    .product-box .text-box h3 {
+        margin-bottom: 3.5rem;
+    }
+
+    .product .text-box {
+        margin-bottom: 0;
+        
+    }
+    
+    .product li:nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+
+    .product .white-more {
+       position: absolute;
+       right: 0;
+       top: 25rem;
+    }
+    
+    .product .allow {
+        position: absolute;
+        right: 5%;
+        
+    }
+
+    .product .button-inner {
+        font-size: 1.8rem;
+    }
+    
+}
+
+/* works */
+.works {
+    padding: 3rem 0 4rem;
+    background-color: #FFFFF4;
+    margin-bottom: 8rem;
+}
+
+.works h2 {
+    margin-bottom: 2.8rem;
+}
+
+.works .img-item {
+    position: relative;
+}
+
+.works .img-item p {
+    width: 8.3rem;
+    padding: 0.5rem 0.65rem;
+    background-color: #5DD6B1;
+    font-family: 'Noto Serif Display', serif;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.works .ja-text-box {
+    padding: 1.8rem 0 4.9rem;
+
+}
+
+.ja-text-box p {
+    font-size: 1.6rem;
+}
+
+.ja-text-box h3 {
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 1025px) {
+    .works {
+        padding: 8rem 0;
+        background:linear-gradient(90deg,#FFFFF4 80%,#fff 20%);
+        margin-bottom: 11rem;
+    }
+
+    .works ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .works ul li {
+        width: 30%;
+    }
+
+    .ja-text-box {
+        font-size: 1.6rem;
+
+    }
+    
+    .ja-text-box h3 {
+        font-size: 1.6rem;
+ 
+    }
+}
+
+/* company */
+.company {
+    padding-top: 2.8rem;
+    background: rgba(232, 250, 245, 1);
+
+}
+
+.company h2 {
+    margin-bottom: 2.8rem;
+}
+
+.company .imgs {
+    display: flex;
+}
+
+.company .imgs img {
+    width: 25%;
+}
+
+@media screen and (min-width: 1025px) {
+    .company .inner {
+        padding: 6.3rem 0 0;
+    }
+    
+    .company h2 {
+        margin-bottom: 3.7rem;
+    }
+    
+    
+    
+}
+
+/* table */
+
+/* PC */
+
+.company .inner {
+    width: 100%;
+}
+
+.company table {
+    max-width: 65rem;
+    width: 86%;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+
+.company table tr {
+    border-top: solid 1px #BEBEBE;
+}
+
+.company table tr:last-of-type {
+    border-bottom: solid 1px #BEBEBE;
+}
+
+
+.company table th {
+    width: 20%;
+    padding: 1.6rem 0 1.6rem 3rem;
+}
+
+.company table td {
+    width: 80%;
+    padding: 1.6rem 0 1.6rem 3rem;
+}
+
+.company table th {
+    color: #fff;
+    background: rgba(176, 227, 215, 1);
+
+}
+
+.company table td {
+    background-color: #fff;
+}
+
+/* SP */
+@media screen and (max-width: 768px) {
+
+    .company table {
+        max-width: 40rem;
+        width: 86%;
+    }
+
+    .company table th,
+    .company table td {
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        
+    }
+
+
+}
+
+/* recruit */
+.recruit {
+    background:linear-gradient(90deg,#EBEBDD 78%,#fff 22%);
+}
+
+.recruit .inner {
+    padding: 3rem 0 0;
+}
+
+.recruit h2 {
+    margin-bottom: 2.2rem;
+}
+
+.recruit p {
+    line-height: 2.5rem;
+    text-align: left;
+    margin-bottom: 2.8rem;
+}
+
+.recruit button,
+.recruit img {
+    margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 1025px) {
+    .recruit {
+        
+        padding: 13rem 0 13rem;
+        background:linear-gradient(90deg,#EBEBDD 70%,#fff 30%);
+    }
+    
+    .recruit .outer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .recruit .inner {
+        padding: 0 6rem;
+    }
+    
+    .recruit h2 {
+        margin-bottom: 2.2rem;
+    }
+    
+    .recruit p {
+        line-height: 2.5rem;
+        text-align: left;
+        margin-bottom: 2.8rem;
+    }
+    
+    .recruit button,
+    .recruit img {
+        margin-bottom: 4rem;
+    }
+}

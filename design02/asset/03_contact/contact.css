@@ -1,0 +1,399 @@
+/********************************
+    fv
+********************************/
+
+.fv {
+    background: url(../03_contact/img/fv-sp.png) center center / cover;
+}
+
+@media screen and (min-width: 1025px) {
+    .fv {
+        background: url(../03_contact/img/fv-pc.png) center center / cover;
+    }
+    
+} 
+
+
+/********************************
+    form
+********************************/
+
+
+.guidance {
+    text-align: left;
+    margin-bottom: 5rem;
+    line-height: 160%;
+    letter-spacing: 0.2em;
+}
+
+.guidance02 {
+    text-align: left;
+    margin-bottom: 2.2rem;
+}
+
+
+@media screen and (min-width: 1025px) {
+
+    .topic-path {
+        margin-bottom: 8rem;
+    }
+
+    .guidance {
+        width: 52rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+
+    .guidance02  {
+       margin-bottom: 0.6rem;
+        text-align: left;
+    }
+
+}
+
+
+.guidance02 span {
+    color: red;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 83rem;
+    margin: 0 auto;
+}
+
+form {
+    margin-bottom: 16rem;
+}
+
+table {
+    width: 100%;
+    max-width: 83rem;
+    margin: 0 auto;
+    border-top: 1px solid #EEEEEE;
+    margin-bottom: 7.2rem;
+}
+
+tr {
+    height: 7.4rem;
+    vertical-align: middle;
+}
+
+.box01 {
+    height: 9.5rem;
+}
+
+.box02 {
+    height: 16rem;
+}
+
+table th {
+    width: 27%;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #EEEEEE;
+    font-size: 1.6rem;
+    padding-left: 2.4rem;
+    vertical-align: middle;
+}
+
+.mini-font {
+    font-size: 0.8rem;
+}
+
+table td {
+    width: 73%;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 1.3rem;
+    padding-left: 3.3rem;
+    vertical-align: middle;
+}
+
+.input-box01 {
+    width: 29.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid #EEEEEE;
+    line-height: 3.5rem;
+    letter-spacing: 0.2rem;
+    border-radius: 8px;
+}
+
+::placeholder {
+    color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+    .form-box {
+        width: 87%;
+        max-width: 40rem;
+    }
+
+    table {
+        width: 100%;
+        max-width: 40rem;
+        border-top: none;
+        margin-bottom: 5rem;
+    }
+    
+    tr {
+        height: auto;
+        vertical-align: middle;
+        margin-bottom: 1.6rem;
+    }
+    
+    .box01 {
+        height: auto;
+    }
+    
+    .box02 {
+        height: auto;
+    }
+    
+    table th {
+        width: 100%;
+        height: auto;
+        border-bottom: none;
+        margin-bottom: 1.6rem;
+        padding: 1.4rem 0 1.4rem 1.6rem;
+        vertical-align: normal;
+    }
+    
+    table td {
+        width: 90%;
+        border-bottom: none;
+        padding-left: 0;
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+    
+    .input-box01 {
+        width: 100%;
+    }
+
+}
+
+
+
+/* select */
+
+.select-outer {
+    width: 17.5rem;
+    position: relative;
+    text-align: left;
+}
+
+.select-outer::after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #000;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 90%;
+    pointer-events:none
+}
+
+select {
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    letter-spacing: 0.2rem;
+}
+
+/* radio */
+
+.radio-wrap {
+    box-sizing: border-box;
+    display: flex;
+    text-align: left;
+}
+
+.radio-box {
+    margin-right: 1.6rem;
+} 
+
+.radio-wrap .radio-box input[type="radio"] {
+    width: auto;
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+}
+
+.radio-wrap .radio-box .text {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+} 
+
+
+.radio-wrap .radio-box .text::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 1px solid #eee;
+    background: #fff;
+    content: "";
+    border-radius: 50%;
+}
+   
+.radio-wrap .radio-box .text::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.35rem;
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    background-color: #5DD6B1;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+/* ボタンを押したときのみ色を表示 */
+
+.radio-wrap .radio-box input:checked + span::after {
+    opacity: 1;
+}
+
+/* checkbox */
+
+.checkbox-wrapper {
+    display: flex;
+}
+
+.checkbox-wrapper .wrap {
+    margin-right: 1.6rem;
+}
+
+.checkbox-wrapper .wrap input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    opacity:0;
+    appearance: none;
+    position: absolute;
+
+}
+
+.checkbox-wrapper .wrap .text {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+} 
+
+/* チェックボックス作る＆装飾 */
+.checkbox-wrapper .wrap .text::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid #eee;
+    background: #fff;
+    content: "";
+    transition: all 0.3s;
+}
+   
+.checkbox-wrapper .wrap .text::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.4rem;
+    width: 0.65rem;
+    height: 0.65rem;
+    color: #5DD6B1;
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "✔";
+    opacity: 0;
+    transition: all 0.3s;
+} 
+
+/* ボタンを押したときのみ色を表示 */
+.checkbox-wrapper .wrap input:checked + span::after {
+    opacity: 1;
+} 
+
+
+@media screen and (max-width: 768px) {
+    .checkbox-wrapper {
+        flex-direction: column;
+    }
+
+    .checkbox-wrapper .wrap {
+        margin-bottom: 0.8rem;
+    }
+
+    .checkbox-wrapper .wrap:last-of-type {
+        margin-bottom: 0;
+    }
+
+}
+
+
+/* textarea */
+textarea {
+    resize: none;
+    width: 51.5rem;
+    height: 13rem;
+    margin: 0 auto;
+    font-size: 1.35rem;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    text-align: left;
+
+}
+
+@media screen and (max-width: 768px) {
+    textarea {    
+        width: 100%;    
+    }
+}
+
+/* 内容確認ボタン */
+.more {
+    width: 32rem;
+    height: 4.8rem;
+    border-radius: 50px;
+    line-height: normal;
+    letter-spacing: 0.2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .more {
+        width: 23.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    form {
+        margin-bottom: 10rem;
+    }
+}
+
+
+
+/********************************
+    赤米　※
+********************************/
+
+sup {
+    color: red;
+    font-size: 8px;
+}
